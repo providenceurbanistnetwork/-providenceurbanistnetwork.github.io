@@ -59,6 +59,10 @@ $on-laptop:        800px !default;
   .wrapper {
     padding: 0px;
   }
+
+  @include media-query($on-palm) {
+    margin-top: $spacing-unit * 1.2;
+  }
 }
 
 .site-nav {
