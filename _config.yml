@@ -34,6 +34,7 @@ plugins:
 # specify which pages should appear in the header and in what order
 header_pages:
 - mission.markdown
+- calendar.markdown
 - resources.markdown
 - contact.markdown
 
