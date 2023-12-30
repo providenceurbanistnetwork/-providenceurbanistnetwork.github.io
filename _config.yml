@@ -30,6 +30,11 @@ url: "https://providenceurbanist.net"
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
+# multi-language support
+languages: ["en", "es"]
+exclude_from_localizations: ["assets"]
 
 # specify which pages should appear in the header and in what order
 header_pages:

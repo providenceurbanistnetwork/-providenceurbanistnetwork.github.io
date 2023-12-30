@@ -17,5 +17,14 @@
         </div>
       </nav>
     {%- endif -%}
+
+    {% if site.lang == "en" %}
+      {% capture link1 %}{{ site.baseurl_root }}/es{{ page.url }}{% endcapture %}
+      <a href="{{ link1 }}" >{% t global.spanish %}</a>
+    {% elsif site.lang == "es" %}
+      {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+      <a href="{{ link2 }}" >{% t global.english %}</a>
+    {% endif %}
+
   </div>
 </header>

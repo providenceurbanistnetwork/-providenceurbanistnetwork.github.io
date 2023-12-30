@@ -1,0 +1,14 @@
+---
+global:
+  english: English
+  spanish: Español
+titles:
+  home: Quienes Somos
+  mission: Nuestra Mission
+  calendar: Calendario
+  resources: Recursos
+  contact: Contáctenos
+  recent_posts: Publicaciones Recientes
+snippets:
+  title: "La Red Urbanista Providence"
+  tagline: "Nuestros vecinos son nuestra bondad ❤️"
