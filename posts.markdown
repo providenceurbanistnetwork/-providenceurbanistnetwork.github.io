@@ -1,7 +1,7 @@
 ---
 layout: page
-list_title: Recent Posts
-list_title_es: Publicaciones Recientes
+list_title: "Recent Posts"
+list_title_es: "Publicaciones Recientes"
 permalink: /posts/
 ---
 

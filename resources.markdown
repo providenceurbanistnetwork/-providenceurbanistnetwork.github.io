@@ -1,6 +1,7 @@
 ---
 type: page
-title: Resources
+title: "Resources"
+title_es: "Recursos"
 ---
 
 Below are some other organizations whose work relates to our mission:
