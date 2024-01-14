@@ -31,6 +31,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# language settings
+languages: ["en", "es"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+parallel_localization: true
+
 # specify which pages should appear in the header and in what order
 header_pages:
 - mission.markdown
