@@ -11,7 +11,7 @@ layout: default
 
   {% include posts.html %}
 
-  <h2 class="page-heading">Calendar</h2>
+  <h2 class="page-heading">{{ page.calendar | default: "Calendar" }}</h2>
 
   {% include calendar.html %}
 

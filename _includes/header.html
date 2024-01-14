@@ -2,8 +2,8 @@
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/img/pun.png" width="125" height="125" alt="{{ site.title | escape }}" /></a>
+    {%- assign page_paths = site.header_pages[site.active_lang] | default: default_paths -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/img/pun.png" width="125" height="125" alt="{{ site.title_translated[site.active_lang] | escape }}" /></a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -14,8 +14,12 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+      {% for tongue in site.languages %}
+      {% if tongue != site.active_lang %}<a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ tongue }}{% endif %}"{% endstatic_href %} >{{ site.language_names[tongue] }}</a>{% endif %}{%- if forloop.last == false -%}{{" "}}{{ site.langsep }}{%- endif -%}
+      {% endfor %}
         </div>
       </nav>
     {%- endif -%}
+
   </div>
 </header>

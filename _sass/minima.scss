@@ -75,6 +75,11 @@ $on-laptop:        800px !default;
     color: $brand-color;
   }
 
+  .language-selector {
+    padding-top: $spacing-unit / 2;
+    text-align: right;
+  }
+
   // overwrite the hamburger menu styles
   @include media-query($on-palm) {
     position: absolute;

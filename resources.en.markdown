@@ -1,6 +1,9 @@
 ---
 type: page
 title: Resources
+lang: en
+page_id: resources
+permalink: "resources.html"
 ---
 
 Below are some other organizations whose work relates to our mission:

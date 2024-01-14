@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Our Mission
+lang: en
+page_id: mission
+permalink: mission.html
 ---
 
 We believe cities are primarily for people, and should not be treated as museums or thoroughfares for cars. Providence has plenty of personal automobiles, and we believe our infrastructure choices since 1945 have unduly privileged cars over alternative transportation options that are more affordable and sustainable, at the expense of both present and future residents. We also believe that as Providence has historically been a city dominated by medium-density, mixed-use buildings, density and housing affordability are compatible with preserving our rich architectural legacy.

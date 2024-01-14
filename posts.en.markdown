@@ -1,6 +1,9 @@
 ---
 layout: page
+lang: en
+page_id: posts
 permalink: /posts/
+list_title: "Recent Posts"
 ---
 
 {% include posts.html %}

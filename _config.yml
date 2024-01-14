@@ -19,10 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: The Providence Urbanist Network
+title_translated:
+  en: The Providence Urbanist Network
+  es: La Red Urbanista Providence
 email: info@providenceurbanist.net
-description: >- # this means to ignore newlines until "baseurl:"
-  The Providence Urbanist Network organizes area residents to promote more housing, greater density and mixed-use construction, and more non-car transportation options.
-tagline: Our neighbors make us great ❤️
+description:
+  en: >-
+    The Providence Urbanist Network organizes area residents to promote more
+    housing, greater density and mixed-use construction, and more non-car
+    transportation options.
+  es: >-
+    La Red Urbanista Providence organiza residentes del área para promover
+    más viviendas, densidad urbana, construcción de uso diverso y más
+    opciones de transportación que no son un carro.
+tagline:
+  en: Our neighbors make us great ❤️
+  es: "Nuestros vecinos son nuestra bondad ❤️"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://providenceurbanist.net"
 
@@ -33,16 +45,25 @@ plugins:
 
 # language settings
 languages: ["en", "es"]
+language_names:
+  en: "English"
+  es: "Español"
 default_lang: "en"
 exclude_from_localization: ["assets"]
 parallel_localization: true
 
 # specify which pages should appear in the header and in what order
 header_pages:
-- mission.markdown
-- calendar.markdown
-- resources.markdown
-- contact.markdown
+  en:
+    - mission.en.markdown
+    - calendar.en.markdown
+    - resources.en.markdown
+    - contact.en.markdown
+  es:
+    - mission.es.markdown
+    - calendar.es.markdown
+    - resources.es.markdown
+    - contact.es.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,14 +73,9 @@ header_pages:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .tool-versions
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
